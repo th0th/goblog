@@ -1,0 +1,1 @@
+This is an example project I created for learning go: A REST API for a blog.
