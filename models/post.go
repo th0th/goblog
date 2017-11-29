@@ -9,7 +9,7 @@ type Post struct {
 
 // PostService is the database access layer for Post.
 type PostService interface {
-	Create(p *Post) (*Post, error)
+	Create(p *Post) error
 	List() (*[]Post, error)
 	ListByCategory(categoryID int64) (*[]Post, error)
 	ReadById(id int64) (*Post, error)

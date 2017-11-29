@@ -8,7 +8,7 @@ type Category struct {
 
 // CategoryService is the database access layer for Category.
 type CategoryService interface {
-	Create(c *Category) (*Category, error)
+	Create(c *Category) error
 	List() (*[]Category, error)
 	ReadById(id int64) (*Category, error)
 	Update(id int64, c *Category) (*Category, error)
