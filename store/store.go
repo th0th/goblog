@@ -11,6 +11,7 @@ type Store struct {
 	DB *sqlx.DB
 
 	CategoryService CategoryService
+	PostService PostService
 }
 
 // New creates and returns new Store
@@ -26,6 +27,7 @@ func New() Store {
 	s.DB = db
 
 	s.CategoryService.store = &s
+	s.PostService.store = &s
 
 	return s
 }
