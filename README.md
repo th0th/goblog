@@ -13,3 +13,8 @@ This stores the data models, has interfaces for database access layers for the m
 ## store
 
 Actual database implementation. Uses sqlx to cast database results into structs.
+
+
+# Database
+
+I am using MySQL as DBMS since I am already familiar with it. You can find an example database dump on `resources/db.sql`.
