@@ -15,7 +15,7 @@ type PostService struct {
 func (s *PostService) List() ([]models.Post, error) {
 	var posts []models.Post
 
-	err := s.store.DB.Select(&posts, "SELECT * FROM posts")
+	err := s.store.DB.Select(&posts, "SELECT * FROM post")
 
 	return posts, err
 }
