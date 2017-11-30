@@ -16,6 +16,7 @@ func (a *API) init() {
 	a.router = httprouter.New()
 
 	a.router.GET("/categories/", ListCategories)
+	a.router.GET("/posts/", ListPosts)
 }
 
 func (a *API) Run() {
