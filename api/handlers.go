@@ -16,5 +16,5 @@ func ListCategories(w http.ResponseWriter, _ *http.Request, _ httprouter.Params)
 		fmt.Fprint(w, err)
 	}
 
-	fmt.Fprint(w, data)
+	respondJSON(w, 200, data)
 }
